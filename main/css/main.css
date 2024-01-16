@@ -1,0 +1,92 @@
+html {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ebf3f4;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 10px;
+  background-color: #a7bac9;
+}
+
+.grid-container {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "nav"
+    "footer";
+}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+nav {
+  grid-area: nav;
+}
+footer {
+  grid-area: footer;
+}
+.pied-page {
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0%;
+  padding: 0%;
+}
+li {
+  border: solid 1px;
+  margin: 10px;
+  display: inline;
+  list-style: none;
+  list-style-type: none;
+  text-align: center;
+  padding: 10px;
+}
+li a {
+  text-decoration: none;
+}
+li p {
+  padding: 0%;
+  margin: 0%;
+}
+.nav-container {
+  display: grid;
+  grid-template-areas: "page-IMC page-sante page-conseil";
+}
+#page-IMC {
+  grid-area: page-IMC;
+}
+#page-sante {
+  grid-area: page-sante;
+}
+#page-conseil {
+  grid-area: page-conseil;
+}
+img {
+  max-width: 150px;
+}
+li img {
+  align-items: center;
+}
+a {
+  color: black;
+}
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}

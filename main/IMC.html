@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Info IMC</title>
+    <link rel="stylesheet" type="text/css" href="css/IMC.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/IMC.js"></script>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <h1>L'indice de masse corporelle</h1>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="main.html">Acceuil</a>
+
+                </li>
+                <li>
+                    <a href="sante.html">La sante</a>
+                </li>
+                <li>
+                    <a href="conseil.html">Conseil</a>
+
+        </nav>
+        <main>
+            <button type="button" class="onglet active" id="btn-info"> Qu'est-ce ? </button>
+            <button type="button" class="onglet" id="btn-calculatriceIMC"> calculatrice </button>
+            <h2>Qu'est-ce que l'IMC ?</h2>
+            <div id="info-imc">
+                <p>
+                    L'IMC est un nombre permettant d'évaluer la situation de sur- ou sous-poids d'une personne.
+                    L'oms utilise l'IMC comme outil standart pour évaluer les risques liés au surpoids. <br>
+                    Les intervalles de l'IMC sont les suivants :
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>IMC</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>moins de 16.5</td>
+                            <td>dénutrition</td>
+                        </tr>
+                        <tr>
+                            <td>16.5 à 18.5</td>
+                            <td>maigreur</td>
+                        </tr>
+                        <tr>
+                            <td>18.5 à 25</td>
+                            <td>poid normal</td>
+                        </tr>
+                        <tr>
+                            <td>25 à 30</td>
+                            <td>surpoids</td>
+                        </tr>
+                        <tr>
+                            <td>30 à 35</td>
+                            <td>obésité modérée</td>
+                        </tr>
+                        <tr>
+                            <td>35 à 40</td>
+                            <td>obésité sévère</td>
+                        </tr>
+                        <tr>
+                            <td>40 et plus</td>
+                            <td>obésité morbide ou massive</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>Comment calculer l'IMC ?</h2>
+                <p>L'IMC se calcule en fonction du poids (P, en kilogramme) et la taille (T, en mètre) de la personne.
+                    la formule est : P/T². <br>
+                    Exemple: une personne mesurant 1,74m pour un poids de 65,5kg. Son IMC est de : IMC = 65,5 / 1,75² =
+                    21,6
+                </p>
+            </div>
+            <div id="ma-calculatrice-IMC">
+                <p id="mon-IMC"></p>
+                <div id="mon-tableau-IMC">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>IMC</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="1">
+                                <td id="denutrition">moins de 16.5</td>
+                                <td>dénutrition</td>
+                            </tr>
+                            <tr id="2">
+                                <td id="maigreur">16.5 à 18.5</td>
+                                <td>maigreur</td>
+                            </tr>
+                            <tr id="3">
+                                <td id="normal">18.5 à 25</td>
+                                <td>poid normal</td>
+                            </tr>
+                            <tr id="4">
+                                <td id="surpoids">25 à 30</td>
+                                <td>surpoids</td>
+                            </tr>
+                            <tr id="5">
+                                <td id="obesite_mod">30 à 35</td>
+                                <td>obésité modérée</td>
+                            </tr>
+                            <tr id="6">
+                                <td id="obesite_sev">35 à 40</td>
+                                <td>obésité sévère</td>
+                            </tr>
+                            <tr id="7">
+                                <td id="obesite_mor">40 et plus</td>
+                                <td>obésité morbide ou massive</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <label for="bimform">
+                    Votre poids <span id="unitePoids">(kg)</span>:
+                    <input type="number" name="poids" id="poids">
+                </label><br>
+                <label for="bimform">
+                    Votre taille <span id="uniteTaille">(m)</span> :
+                    <input type="number" name="taille" id="taille">
+                </label>
+                <button type="button" id="btn-convert-unite">SI/Impérial</button>
+                <button type="button" id="btn-calculate"> Calculate </button>
+                <button type="button" id="btn-save">Save</button>
+            </div>
+        </main>
+        <footer>
+            <hr>
+            <div class="pied-page">
+                <p>Théo</p>
+                <p>Projet IMC</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

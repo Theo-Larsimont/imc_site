@@ -1,0 +1,99 @@
+html {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ebf3f4;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 10px;
+  background-color: #a7bac9;
+}
+h1 {
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+nav {
+  grid-area: nav;
+  margin-bottom: 50px;
+}
+footer {
+  grid-template-areas: footer;
+}
+.pied-page {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+nav li {
+  padding: 5px;
+  border: solid 2px;
+  text-decoration: none;
+  list-style-type: none;
+}
+nav li:hover {
+  background-color: rgb(39, 133, 139);
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+table {
+  border-collapse: collapse;
+}
+th {
+  border-bottom: solid 2px black;
+}
+td {
+  border-collapse: collapse;
+  border-bottom: solid 1px gray;
+  padding: 8px;
+}
+input {
+  margin: 10px;
+}
+#mon-tableau-IMC {
+  visibility: hidden;
+  display: none;
+}
+#btn-save {
+  visibility: hidden;
+  display: none;
+}
+#ma-calculatrice-IMC {
+  visibility: hidden;
+  display: none;
+}
+
+.onglet {
+  background-color: #ced9d8;
+  border: none;
+  text-align: center;
+  background-color: #a7bac9;
+  cursor: pointer;
+  border-bottom: solid black 1px;
+}
+.active {
+  border: 0px;
+  border-right: solid black 1px;
+  border-top: solid black 1px;
+  border-left: solid black 1px;
+}
